@@ -4,3 +4,9 @@ _site
 .jekyll-metadata
 vendor
 Gemfile.lock
+_site/
+.jekyll-cache/
+gleam-js/**/build/
+gleam-js/**/node_modules/
+gleam-js/**/_site/
+

@@ -1,0 +1,16 @@
+{
+  "name": "bundling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild ../entry.js --bundle --format=esm --outfile=../../assets/mh-tools.js",
+    "watch": "esbuild ../entry.js --bundle --format=esm --outfile=../../assets/mh-tools.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.9"
+  }
+}
