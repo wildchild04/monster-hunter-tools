@@ -2063,6 +2063,9 @@ var always_kind = 2;
 function attribute2(name, value) {
   return attribute(name, value);
 }
+function class$(name) {
+  return attribute2("class", name);
+}
 function placeholder(text4) {
   return attribute2("placeholder", text4);
 }
@@ -4737,6 +4740,7 @@ function view(model) {
     toList([
       input(
         toList([
+          class$("border bg-red-50 rounded px-3 py-2 w-full"),
           on_input((var0) => {
             return new UpdateInput(var0);
           }),
@@ -4744,7 +4748,12 @@ function view(model) {
         ])
       ),
       button(
-        toList([on_click(new Submit())]),
+        toList([
+          on_click(new Submit()),
+          class$(
+            "mt-2 px-3 py-2 rounded bg-gray-200 hover:bg-gray-300"
+          )
+        ]),
         toList([text3("Echo Uppercase")])
       ),
       div(toList([]), toList([text3(model.output)]))
@@ -4759,13 +4768,19 @@ function main() {
       "let_assert",
       FILEPATH,
       "mh_tools",
-      41,
+      48,
       "main",
       "Pattern match failed, no pattern matched the value.",
-      { value: $, start: 837, end: 886, pattern_start: 848, pattern_end: 853 }
+      {
+        value: $,
+        start: 1026,
+        end: 1075,
+        pattern_start: 1037,
+        pattern_end: 1042
+      }
     );
   }
-  return $;
+  return void 0;
 }
 
 // ../entry.js

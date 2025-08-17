@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 pushd gleam-js/mh_tools >/dev/null
+gleam clean
 gleam build
 pushd bundling >/dev/null
 npm ci

@@ -1,0 +1,16 @@
+@config "./tailwind.config.js";
+
+@source "../../../assets/**/*.{js,mjs}";
+@source "../entry.js";
+@source "../src/**/*.gleam";
+@source "../../../**/*.{html,md}";
+@source "../../../_layouts/**/*.{html,md}";
+@source "../../../_includes/**/*.{html,md}";
+@source "../../../_posts/**/*.{html,md}";
+@source "../../../tools.md";
+@source "../../../blog.md";
+@source "../../../index.markdown";
+
+/* no preflight (keeps Minima’s base styles) */
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
